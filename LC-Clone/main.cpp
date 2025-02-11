@@ -6,9 +6,10 @@
 //
 
 #include <iostream>
+#include "UserProfile.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
+int main() {
     std::cout << "Hello, World!\n";
+    UserProfile profile = UserProfile("PagalavanPagal66" , "9691215143" , "pagalavanpagal017@gmail.com");
     return 0;
 }
