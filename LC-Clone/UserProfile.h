@@ -1,5 +1,10 @@
 #include<strings.h>
+#include<map>
 using namespace std;
+
+enum ProblemDifficulty{
+    
+};
 
 class UserProfile{
 public:
@@ -10,13 +15,13 @@ public:
     int m_contestCnt = 0;
     int m_contestRating = 0;
     UserProfile(string pUsername, string pMobile, string pGmail){
-        m_Username = pUsername;
+        m_userName = pUsername;
         m_mobile = pMobile;
         m_gmail = pGmail;
     }
-    vector<int> getProblemData() const;
+    map<string,int> getProblemData() const;
 private:
     string m_mobile;
     string m_gmail;
-    string m_username;
+    string m_userName;
 };
